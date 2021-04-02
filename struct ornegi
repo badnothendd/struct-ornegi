@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct ogrenci {
+	int no;
+	char ad[50];
+	char soyad[50];
+	int cinsiyet;
+	int fakultebolum;
+	float genelortalama;
+}; 
+ int main ()
+ {
+ 	struct ogrenci ogrblg;
+ 	printf("*********veri girisi**********\n");
+ 	printf("ogrenci no:");
+ 	scanf("%d",&ogrblg.no);
+ 	printf("ogrenci ad:");
+ 	scanf("%s",&ogrblg.ad);
+ 	printf("ogrenci soyad:");
+ 	scanf("%s",&ogrblg.soyad);
+ 	printf("cinsiyet:");
+ 	scanf("%d",&ogrblg.cinsiyet);
+ 	printf("fakultebolum:");
+ 	scanf("%d",&ogrblg.fakultebolum);
+ 	printf("genelortalama:");
+ 	scanf("%f",&ogrblg.genelortalama);
+ 	
+ 	printf("********** veri okuma***********\n");
+ 	printf("no: %d \n ad: %s \n soyad: %s \n cinsiyet: %d \n fakultebolum: %d \n genelortalama: %0.2f",
+ 	   ogrblg.no,
+ 	   ogrblg.ad,
+ 	   ogrblg.soyad,
+ 	   ogrblg.cinsiyet,
+ 	   ogrblg.fakultebolum,
+ 	   ogrblg.genelortalama
+       );
+
+ return 0;
+}
